@@ -1,0 +1,21 @@
+.calc {
+  position: fixed;
+  top: 10vh;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.calc .calc-result {
+  height: 24%;
+  background-color: #dbe1dc;
+}
+.calc .calc-row {
+  display: flex;
+  flex: 1;
+}
+.calc .calc-row .calc-btn {
+  flex: 1;
+  margin: 0.1em;
+  background-color: #A5CBAA;
+}/*# sourceMappingURL=calculator.css.map */
