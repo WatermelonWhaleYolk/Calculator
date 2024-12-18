@@ -1,26 +1,47 @@
-$b:1px solid blue;
+@mixin calc-btn-layout($bg-color:#7A8180, $color:white) {
+  height:100%;
+  border-radius: 5%;
+  border:none;
+  background-color:$bg-color;
+  color:$color;
+  font-size:1.5rem;
+  overflow: hidden;
 
+}
+.wrapper {
+  width:100vw;
+  height:100vh;
+}
+.calc-result-display{
+  position:fixed;
+  top:10%;
+  width:100%;
+  height:30%;
+  background-color:#dbe1dc;
+}
 .calc {
   position: fixed;
-  top: 10vh;
+  bottom:0;
   width: 100%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap:5px;
 
-  .calc-result {
-    height:24%;
-    background-color: #dbe1dc;
-  }
+    .calc-num-btn {
+      @include calc-btn-layout($bg-color:#A5CBAA, $color:black);
+      
+      &:focus{
+        background-color:#b3d3bb;
+      }
 
-  .calc-row {
-    display: flex;
-    flex:1;
+    }
+    .calc-oper-btn {
+      @include calc-btn-layout();
+    }
 
-    .calc-btn{
-      flex:1;
-      margin: 0.1em;
-      background-color: #A5CBAA;
+    .calc-result-btn{
+      @include calc-btn-layout();
     }
   }
-}

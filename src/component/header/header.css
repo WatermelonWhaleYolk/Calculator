@@ -5,13 +5,13 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  background-color: #778D7A;
+  background-color: #a5cbaa;
 }
 .header .hamburger-menu {
   width: 10%;
   height: 100%;
   border: none;
-  background-color: #778D7A;
+  background-color: #a5cbaa;
 }
 .header h1 {
   color: #B6916B;
@@ -20,5 +20,5 @@
   width: 10%;
   height: 100%;
   border: none;
-  background-color: #778D7A;
+  background-color: #a5cbaa;
 }/*# sourceMappingURL=header.css.map */
